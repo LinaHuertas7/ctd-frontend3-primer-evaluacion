@@ -1,25 +1,35 @@
 * {
-  margin: 0;
-  box-sizing: border-box;
   background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0;
 }
+
+.App{
+  background-image: url("/src/image.jpg");
+}
+
 .layout {
-  height: 100vh;
-  max-width: 500px;
-  margin: 0 auto;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: "Hina Mincho", serif;
+  height: 100vh;
+  justify-content: center;
+  margin: 10px auto;
+  max-width: 650px;
 }
 
 .historia {
+  align-items: center;
+  color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  color: white;
+  margin-bottom: 36px;
+  margin-top: 55px;
+  padding: 10px 50px;
+  text-align: justify;
 }
 
 .opciones {
@@ -29,7 +39,7 @@
 .opcion {
   display: flex;
   gap: 15px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .recordatorio {
@@ -38,14 +48,14 @@
 }
 
 .botones {
-  box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
   background-color: #f9f9f9;
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
   border-radius: 6px;
   border: 1px solid #dcdcdc;
-  display: inline-block;
-  cursor: pointer;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
   color: #000000;
+  cursor: pointer;
+  display: inline-block;
   font-family: Arial;
   font-size: 15px;
   font-weight: bold;
@@ -53,10 +63,12 @@
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
 }
+
 .botones:hover {
-  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
   background-color: #e9e9e9;
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
 }
+
 .botones:active {
   position: relative;
   top: 1px;
